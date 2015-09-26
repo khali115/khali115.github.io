@@ -1,0 +1,114 @@
+<html>
+
+<head>
+
+  <title>Friends Quiz</title>
+  <h1>Friends Quiz</h1>
+
+</head>
+
+<form>
+     
+     1. What is the name of Pheobe's sister? <br>
+  <input type="radio" id="a1" name="q1" value="a" >a. Ariel <br>
+  <input type="radio" id="b1" name="q1" value ="b">b. Ursula <br>
+  <input type="radio" id="c1" name="q1" value="c">c. Monica <br>
+  <input type="radio" id="d1" name="q1" value="d">d. Sara <br><br>
+      
+      2. Which couple was "On a Break"? <br>
+  <input type="radio" id="a2" name="q2" value="a">a. Monica and Chandler <br>
+  <input type="radio" id="b2" name="q2" value="b">b. Ross and Rachael <br>
+  <input type="radio" id="c2" name="q2" value="b">c. Pheobe and Joey <br>
+  <input type="radio" id="d2" name="q2" value="b">d. Chandler and Janice <br><br>
+      
+      3.According to Pheobe, Ross and Rachael were each other's...? <br>
+  <input type="radio" id="a3" name="q3" value"a">a. Lobster <br>
+  <input type="radio" id="b3" name="q3" value"b">b. Shrimp <br>
+  <input type="radio" id="c3" name="q3" value"c">c. Soulmate  <br>
+  <input type="radio" id="d3" name="q3" value"d">d. Squirrel <br><br>
+      
+      4. On what Soap did Joey get his big break? <br>
+  <input type="radio" id="a4" name="q4" value"a">a. One Life To Live <br>
+  <input type="radio" id="b4" name="q4" value"b">b. General Hospital <br>
+  <input type="radio" id="c4" name="q4" value"c">c. Mac and Cheese <br>
+  <input type="radio" id="d4" name="q4" value"d">d. Days of Our Lives <br><br>
+      
+      5. What was the name of Chandler's roommate before Joey moved in? <br>
+  <input type="radio" id="a5" name="q5" value"a">a. Ross <br>
+  <input type="radio" id="b5" name="q5" value"b">b. David <br>
+  <input type="radio" id="c5" name="q5" value"c">c. Kip <br>
+  <input type="radio" id="d5" name="q5" value"d">d. Eddie <br><br>
+      
+      6. What is Chandler Bing's middle name? <br>
+  <input type="radio" id="a6" name="q6" value"a">a. Marty <br>
+  <input type="radio" id="b6" name="q6" value"b">b. Matthew <br>
+  <input type="radio" id="c6" name="q6" value"c">c. Muriel <br>
+  <input type="radio" id="d6" name="q6" value"d">d. Maximillian <br><br>
+      
+      7. What name does Chandler give to his pet chick? <br>
+  <input type="radio" id="a7" name="q7" value"a">a. Yasmine <br>
+  <input type="radio" id="b7" name="q7" value"b">b. Juliette <br>
+  <input type="radio" id="c7" name="q7" value"c">c. Stevie <br>
+  <input type="radio" id="d7" name="q7" value"d">d. Rosita <br><br>
+      
+      8. In order to teach his son about Hanukkah, who dos Ross dresss up as?<br>
+  <input type="radio" id="a8" name="q8" value"a">a. Santa Clause <br>
+  <input type="radio" id="b8" name="q8" value"b">b. The Holiday Armadillo <br>
+  <input type="radio" id="c8" name="q8" value"c">c. Moses <br>
+  <input type="radio" id="d8" name="q8" value"d">d. Jesus <br><br>
+      
+      9. Where did Pheobe's grandma get her chocolate chip cookie recipe from? <br>
+  <input type="radio" id="a9" name="q9" value"a">a. Famous french chef <br>
+  <input type="radio" id="b9" name="q9" value"b">b. Her mother <br>
+  <input type="radio" id="c9" name="q9" value"c">c. Came up with it herself <br>
+  <input type="radio" id="d9" name="q9" value"d">d. A package of Nestle Tollhouse chocolate Chips <br><br>
+      
+      10. What does Ross claim one needs in order to be good at self-defense> <br>
+  <input type="radio" id="a10" name="q10" value"a">a. Unagi <br>
+  <input type="radio" id="b10" name="q10" value"b">b. Fast reflexes <br>
+  <input type="radio" id="c10" name="q10" value"c">c. Be in shape <br>
+  <input type="radio" id="d10" name="q10" value"d">d. Years of training <br><br>
+      
+      11. What scares the bejeezus out of Chandler? <br>
+  <input type="radio" id="a11" name="q11" value"a">a. Michael Flatley Lord of the Dance <br>
+  <input type="radio" id="b11" name="q11" value"b">b. Stray Cats <br>
+  <input type="radio" id="c11" name="q11" value"c">c. Bats <br>
+  <input type="radio" id="d11" name="q11" value"d">d. Mimes <br>
+      
+</form>
+      
+<button type="button" id="button">Done!</button> 
+<script language ="javascript">
+
+document.getElementById('button').onclick = function() {
+  
+  var answers = "";
+
+  if(!document.getElementById('b1').checked)
+    answers += "1 ";
+  if(!document.getElementById('b2').checked)
+    answers += "2 ";
+  if(!document.getElementById('a3').checked)
+    answers += "3 ";
+  if(!document.getElementById('d4').checked)
+    answers += "4 ";
+  if(!document.getElementById('c5').checked)
+    answers += "5 ";
+  if(!document.getElementById('c6').checked)
+    answers += "6 ";
+  if(!document.getElementById('a7').checked)
+    answers += "7 ";
+  if(!document.getElementById('b8').checked)
+    answers += "8 ";
+  if(!document.getElementById('d9').checked)
+    answers += "9 ";
+  if(!document.getElementById('a10').checked)
+    answers += "10 ";
+  if(!document.getElementById('a11').checked)
+    answers += "11 ";
+    
+    alert("You got number(s) " + answers + "wrong");
+}
+    
+</script>
+</html>

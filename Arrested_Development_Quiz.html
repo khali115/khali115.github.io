@@ -1,0 +1,114 @@
+<html>
+
+<head>
+
+  <title>Arrested Development Quiz</title>
+  <h1>Arrested Development Quiz</h1>
+
+</head>
+
+<form>
+     
+     1. What is the name of Lindsay's daughter? <br>
+  <input type="radio" id="a1" name="q1" value="a" >a. Laura <br>
+  <input type="radio" id="b1" name="q1" value ="b">b. Maeby <br>
+  <input type="radio" id="c1" name="q1" value="c">c. Lauren <br>
+  <input type="radio" id="d1" name="q1" value="d">d. Maybe <br><br>
+      
+      2. Who constantly says, "i've made a huge mistake"? <br>
+  <input type="radio" id="a2" name="q2" value="a">a. Michael <br>
+  <input type="radio" id="b2" name="q2" value="b">b. Gob <br>
+  <input type="radio" id="c2" name="q2" value="b">c. George Sr <br>
+  <input type="radio" id="d2" name="q2" value="b">d. Buster <br><br>
+      
+      3. What softball position does plain Ann (who?) play? <br>
+  <input type="radio" id="a3" name="q3" value"a">a. Catcher <br>
+  <input type="radio" id="b3" name="q3" value"b">b. 1st base <br>
+  <input type="radio" id="c3" name="q3" value"c">c. Outfield  <br>
+  <input type="radio" id="d3" name="q3" value"d">d. Pitcher <br><br>
+      
+      4. What group was Tobias trying to join? <br>
+  <input type="radio" id="a4" name="q4" value"a">a. AA <br>
+  <input type="radio" id="b4" name="q4" value"b">b. Rent <br>
+  <input type="radio" id="c4" name="q4" value"c">c. Jabberwockeez <br>
+  <input type="radio" id="d4" name="q4" value"d">d. Blue man <br><br>
+      
+      5. Who is the Bluth family's new lawyer? <br>
+  <input type="radio" id="a5" name="q5" value"a">a. Barry Zukercorn <br>
+  <input type="radio" id="b5" name="q5" value"b">b. Wayne Jarvis <br>
+  <input type="radio" id="c5" name="q5" value"c">c. Bob LobLaw <br>
+  <input type="radio" id="d5" name="q5" value"d">d. Atticus Finch <br><br>
+      
+      6. What is George Sr's twin brother's name? <br>
+  <input type="radio" id="a6" name="q6" value"a">a. Matthew <br>
+  <input type="radio" id="b6" name="q6" value"b">b. George Jr <br>
+  <input type="radio" id="c6" name="q6" value"c">c. Oscar <br>
+  <input type="radio" id="d6" name="q6" value"d">d. Michael <br><br>
+      
+      7. Who is Mr. F? <br>
+  <input type="radio" id="a7" name="q7" value"a">a. Tobias <br>
+  <input type="radio" id="b7" name="q7" value"b">b. Michael <br>
+  <input type="radio" id="c7" name="q7" value"c">c. Bob <br>
+  <input type="radio" id="d7" name="q7" value"d">d. George Michael <br><br>
+      
+      8. Who plays George Michael?<br>
+  <input type="radio" id="a8" name="q8" value"a">a. Joseph Gordon Levitt <br>
+  <input type="radio" id="b8" name="q8" value"b">b. Michael Cera <br>
+  <input type="radio" id="c8" name="q8" value"c">c. Seth Rogen <br>
+  <input type="radio" id="d8" name="q8" value"d">d. Jonah Hill <br><br>
+      
+      9. What is the name of the Private Eye hired by Lucille? <br>
+  <input type="radio" id="a9" name="q9" value"a">a. Barry Zuckercorn <br>
+  <input type="radio" id="b9" name="q9" value"b">b. Ice <br>
+  <input type="radio" id="c9" name="q9" value"c">c. Gene Parmesan <br>
+  <input type="radio" id="d9" name="q9" value"d">d. Mr. F <br><br>
+      
+      10. Who loses a hand? <br>
+  <input type="radio" id="a10" name="q10" value"a">a. Buster <br>
+  <input type="radio" id="b10" name="q10" value"b">b. Gob <br>
+  <input type="radio" id="c10" name="q10" value"c">c. George Michael <br>
+  <input type="radio" id="d10" name="q10" value"d">d. Tobias <br><br>
+      
+      11. What does the family food stand sell? <br>
+  <input type="radio" id="a11" name="q11" value"a">a. Frozen Bananas <br>
+  <input type="radio" id="b11" name="q11" value"b">b. Candied Apples <br>
+  <input type="radio" id="c11" name="q11" value"c">c. Frozen Yogurt <br>
+  <input type="radio" id="d11" name="q11" value"d">d. Cookies <br>
+      
+</form>
+      
+<button type="button" id="button">Done!</button> 
+<script language ="javascript">
+
+document.getElementById('button').onclick = function() {
+  
+  var answers = "";
+
+  if(!document.getElementById('b1').checked)
+    answers += "1 ";
+  if(!document.getElementById('b2').checked)
+    answers += "2 ";
+  if(!document.getElementById('a3').checked)
+    answers += "3 ";
+  if(!document.getElementById('d4').checked)
+    answers += "4 ";
+  if(!document.getElementById('c5').checked)
+    answers += "5 ";
+  if(!document.getElementById('c6').checked)
+    answers += "6 ";
+  if(!document.getElementById('a7').checked)
+    answers += "7 ";
+  if(!document.getElementById('b8').checked)
+    answers += "8 ";
+  if(!document.getElementById('c9').checked)
+    answers += "9 ";
+  if(!document.getElementById('a10').checked)
+    answers += "10 ";
+  if(!document.getElementById('a11').checked)
+    answers += "11 ";
+    
+    alert("You got number(s) " + answers + "wrong");
+}
+    
+</script>
+</html>
